@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#4A90E2" stroke="#2E5C8A" stroke-width="2"/>
+
+  <!-- Simple user icon -->
+  <circle cx="100" cy="75" r="30" fill="#FFFFFF"/>
+  <path d="M 50 160 Q 50 120 100 120 Q 150 120 150 160" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Letter C (for Cai Yi Zeng) -->
+  <text x="100" y="145" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#4A90E2" text-anchor="middle">C</text>
+</svg>
