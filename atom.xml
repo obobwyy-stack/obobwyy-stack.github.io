@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Cai Yi Zeng</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <icon>http://localhost:4000/icon.png</icon>
+  <id>http://localhost:4000/</id>
+  <link href="http://localhost:4000/" rel="alternate"/>
+  <link href="http://localhost:4000/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Cai Yi Zeng</rights>
+  <subtitle>A personal blog</subtitle>
+  <title>My Blog</title>
+  <updated>2026-08-02T11:19:06.512Z</updated>
+  <entry>
+    <author>
+      <name>Cai Yi Zeng</name>
+    </author>
+    <id>http://localhost:4000/2026/08/02/vibecoding%E6%B5%81%E7%A8%8B%E6%BC%94%E8%BF%9B/</id>
+    <link href="http://localhost:4000/2026/08/02/vibecoding%E6%B5%81%E7%A8%8B%E6%BC%94%E8%BF%9B/"/>
+    <published>2026-08-02T11:19:06.000Z</published>
+    <title>vibecoding流程演进</title>
+    <updated>2026-08-02T11:19:06.512Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Cai Yi Zeng</name>
+    </author>
+    <category term="开发经验" scheme="http://localhost:4000/categories/%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C/"/>
+    <category term="编程" scheme="http://localhost:4000/tags/%E7%BC%96%E7%A8%8B/"/>
+    <category term="开发流程" scheme="http://localhost:4000/tags/%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/"/>
+    <category term="效率" scheme="http://localhost:4000/tags/%E6%95%88%E7%8E%87/"/>
+    <id>http://localhost:4000/2026/08/02/vibecoding-%E6%B5%81%E7%A8%8B%E6%BC%94%E8%BF%9B/</id>
+    <link href="http://localhost:4000/2026/08/02/vibecoding-%E6%B5%81%E7%A8%8B%E6%BC%94%E8%BF%9B/"/>
+    <published>2026-08-02T11:18:01.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Vibecoding-流程演进：从传统到现代"><a href="#Vibecoding-流程演进：从传统到现代" class="headerlink" title="Vibecoding 流程演进：从传统到现代"></a>Vibecoding]]>
+    </summary>
+    <title>vibecoding 流程演进</title>
+    <updated>2026-08-02T11:18:16.655Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Cai Yi Zeng</name>
+    </author>
+    <category term="欢迎" scheme="http://localhost:4000/tags/%E6%AC%A2%E8%BF%8E/"/>
+    <category term="简介" scheme="http://localhost:4000/tags/%E7%AE%80%E4%BB%8B/"/>
+    <id>http://localhost:4000/2026/08/02/example-sticky-post/</id>
+    <link href="http://localhost:4000/2026/08/02/example-sticky-post/"/>
+    <published>2026-08-02T06:30:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="欢迎访问我的博客！"><a href="#欢迎访问我的博客！" class="headerlink"]]>
+    </summary>
+    <title>欢迎访问我的博客</title>
+    <updated>2026-08-02T12:21:25.670Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Cai Yi Zeng</name>
+    </author>
+    <category term="教程" scheme="http://localhost:4000/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="Hexo" scheme="http://localhost:4000/tags/Hexo/"/>
+    <category term="博客" scheme="http://localhost:4000/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="教程" scheme="http://localhost:4000/tags/%E6%95%99%E7%A8%8B/"/>
+    <id>http://localhost:4000/2026/08/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</id>
+    <link href="http://localhost:4000/2026/08/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    <published>2026-08-02T03:09:21.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="我的第一篇技术文章"><a href="#我的第一篇技术文章" class="headerlink" title="我的第一篇技术文章"></a>我的第一篇技术文章</h1><p>这是我使用 Hexo 博客系统发布的第一篇文章！</p>
+<h2]]>
+    </summary>
+    <title>我的第一篇技术文章</title>
+    <updated>2026-08-02T03:09:32.303Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Cai Yi Zeng</name>
+    </author>
+    <category term="Tutorial" scheme="http://localhost:4000/categories/Tutorial/"/>
+    <category term="Web Development" scheme="http://localhost:4000/categories/Tutorial/Web-Development/"/>
+    <category term="Hexo" scheme="http://localhost:4000/tags/Hexo/"/>
+    <category term="Blogging" scheme="http://localhost:4000/tags/Blogging/"/>
+    <category term="Static Sites" scheme="http://localhost:4000/tags/Static-Sites/"/>
+    <category term="GitHub Pages" scheme="http://localhost:4000/tags/GitHub-Pages/"/>
+    <category term="Web Development" scheme="http://localhost:4000/tags/Web-Development/"/>
+    <id>http://localhost:4000/2026/08/01/2026-08-01-hexo-blog-setup-complete/</id>
+    <link href="http://localhost:4000/2026/08/01/2026-08-01-hexo-blog-setup-complete/"/>
+    <published>2026-08-01T12:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Welcome to my first blog]]>
+    </summary>
+    <title>Complete Hexo Blog Setup Tutorial</title>
+    <updated>2026-08-01T12:05:32.697Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Cai Yi Zeng</name>
+    </author>
+    <id>http://localhost:4000/2026/08/01/hello-world/</id>
+    <link href="http://localhost:4000/2026/08/01/hello-world/"/>
+    <published>2026-08-01T11:37:07.920Z</published>
+    <summary>
+      <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a>]]>
+    </summary>
+    <title>Hello World</title>
+    <updated>2026-08-01T11:37:07.921Z</updated>
+  </entry>
+</feed>
