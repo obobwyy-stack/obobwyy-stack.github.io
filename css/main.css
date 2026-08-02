@@ -2549,7 +2549,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff2d8e;
+  background: #387d37;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2591,5 +2591,37 @@ header.header {
 @media (min-width: 1200px) {
   .sidebar-dimmer {
     display: none;
+  }
+}
+.post-body {
+  display: none !important;
+}
+.post-meta {
+  display: block !important;
+}
+.main-menu .menu-item a {
+  color: #333 !important;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.main-menu .menu-item a:hover {
+  color: #000 !important;
+  background: rgba(0,0,0,0.08) !important;
+  opacity: 1;
+}
+.main-menu .menu-item.menu-item-active a {
+  color: #222 !important;
+  font-weight: 700;
+  border-bottom: 2px solid #222;
+}
+@media (max-width: 767px) {
+  .main-menu .menu-item a {
+    color: #333 !important;
+    background: rgba(0,0,0,0.05) !important;
+    font-weight: 600;
+    padding: 12px 20px !important;
+  }
+  .main-menu .menu-item:hover {
+    background: rgba(0,0,0,0.12) !important;
   }
 }

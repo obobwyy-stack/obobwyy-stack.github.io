@@ -27,17 +27,20 @@ body {
     letter-spacing: 1px;
 }
 
-/* 导航菜单 - 经典风格 */
+/* 导航菜单 - 经典风格，增强对比度 */
 .menu-item a {
-    color: #f5f5dc !important;
+    color: #2c2c2c !important; /* 深黑色，增强对比度 */
     font-family: "Georgia", serif;
     font-size: 1.1em;
+    font-weight: 600; /* 加粗字体 */
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1); /* 添加浅色背景 */
 }
 
 .menu-item a:hover {
-    color: #ffd700 !important; /* 金色高亮 */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    color: #000000 !important; /* 纯黑色，更明显 */
+    background: rgba(255, 255, 255, 0.3); /* 悬停时背景更明显 */
+    text-shadow: none; /* 移除阴影，保持清晰 */
 }
 
 /* 文章卡片 - 纸质效果 */
@@ -133,6 +136,39 @@ a:hover {
     box-shadow: 0 4px 12px rgba(139,115,85,0.25);
     transform: translateY(-2px);
     transition: all 0.3s ease;
+}
+
+/* 首页文章只显示标题，隐藏内容 - 针对实际页面结构 */
+body.use-motion .post-body {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 确保只对首页的post-body生效 */
+body.use-motion .post-block .post-body {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 保留文章元信息显示 */
+.post-meta {
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+}
+
+/* 调整文章块样式，因为没有内容后可能需要一些间距调整 */
+.post-block {
+    min-height: auto !important;
+    padding: 1em 0 !important;
 }
 
 /* 响应式调整 */
