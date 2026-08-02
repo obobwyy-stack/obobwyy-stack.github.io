@@ -60,63 +60,125 @@
 
 <script>
 (function() {
-  // 首页只显示文章标题，无其他元素
+  // 首页极简化 - 零间距文章标题
   if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '') {
-    window.addEventListener('DOMContentLoaded', function() {
-      // 隐藏文章正文
-      var postBodies = document.querySelectorAll('.post-body');
-      postBodies.forEach(function(postBody) {
-        postBody.style.display = 'none';
-        postBody.style.height = '0';
-        postBody.style.overflow = 'hidden';
-        postBody.style.padding = '0';
-        postBody.style.margin = '0';
+
+    // 页面加载完成后立即执行
+    function minimizeHomepage() {
+      // 创建极简样式
+      var style = document.createElement('style');
+      style.id = 'minimal-homepage-style';
+      style.innerHTML = `
+        /* 完全重置首页布局 */
+        body.use-motion .post-block {
+          padding: 0 !important;
+          margin: 0 !important;
+          margin-bottom: 0 !important;
+          background: none !important;
+          border: none !important;
+          box-shadow: none !important;
+          height: auto !important;
+          min-height: 0 !important;
+          overflow: visible !important;
+        }
+
+        body.use-motion .post-header {
+          padding: 0 !important;
+          margin: 0 !important;
+          margin-bottom: 0 !important;
+        }
+
+        body.use-motion .post-title {
+          margin: 0 !important;
+          padding: 0.1em 0 0 0 !important;
+          font-size: 1.1em !important;
+          line-height: 1.2 !important;
+          border: none !important;
+        }
+
+        body.use-motion .post-title-link {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        /* 隐藏所有其他元素 */
+        body.use-motion .post-body,
+        body.use-motion .post-meta,
+        body.use-motion .post-meta-container,
+        body.use-motion .post-sticky-flag,
+        body.use-motion .post-button,
+        body.use-motion .post-button-bevel {
+          display: none !important;
+          height: 0 !important;
+          visibility: hidden !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        /* 重置主容器间距 */
+        body.use-motion .content-wrap,
+        body.use-motion .posts-expand,
+        body.use-motion .post-block:last-child {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+
+        /* 针对Muse scheme的特殊处理 */
+        body.use-motion .posts-expand {
+          padding-top: 0 !important;
+        }
+      `;
+
+      // 移除旧样式（如果存在）
+      var oldStyle = document.getElementById('minimal-homepage-style');
+      if (oldStyle) {
+        oldStyle.remove();
+      }
+
+      document.head.appendChild(style);
+
+      // 额外的JavaScript处理
+      var posts = document.querySelectorAll('.post-block');
+      posts.forEach(function(post) {
+        post.style.margin = '0';
+        post.style.padding = '0';
+        post.style.marginBottom = '0';
       });
 
-      // 完全隐藏文章元信息（日期、分类等）
-      var postMetas = document.querySelectorAll('.post-meta');
-      postMetas.forEach(function(meta) {
-        meta.style.display = 'none';
-        meta.style.height = '0';
-        meta.style.overflow = 'hidden';
-        meta.style.padding = '0';
-        meta.style.margin = '0';
+      var headers = document.querySelectorAll('.post-header');
+      headers.forEach(function(header) {
+        header.style.margin = '0';
+        header.style.padding = '0';
+        header.style.marginBottom = '0';
       });
 
-      // 极简文章块样式 - 只显示标题
-      var postBlocks = document.querySelectorAll('.post-block');
-      postBlocks.forEach(function(block) {
-        block.style.padding = '0';
-        block.style.margin = '0';
-        block.style.marginBottom = '0.3em';
-        block.style.minHeight = 'auto';
-        block.style.background = 'transparent';
-        block.style.border = 'none';
-        block.style.boxShadow = 'none';
-      });
-
-      // 文章标题样式 - 简洁紧凑
-      var postTitles = document.querySelectorAll('.post-title');
-      postTitles.forEach(function(title) {
-        title.style.fontSize = '1.1em';
+      var titles = document.querySelectorAll('.post-title');
+      titles.forEach(function(title) {
         title.style.margin = '0';
-        title.style.padding = '0.3em 0';
+        title.style.padding = '0';
+        title.style.marginBottom = '0';
         title.style.borderBottom = 'none';
       });
 
-      // 文章头部样式
-      var postHeaders = document.querySelectorAll('.post-header');
-      postHeaders.forEach(function(header) {
-        header.style.margin = '0';
-        header.style.padding = '0';
+      // 隐藏所有meta容器
+      var metaContainers = document.querySelectorAll('.post-meta-container');
+      metaContainers.forEach(function(container) {
+        container.style.display = 'none';
+        container.style.height = '0';
+        container.style.margin = '0';
+        container.style.padding = '0';
       });
+    }
 
-      // 隐藏置顶标记（可选）
-      var stickyFlags = document.querySelectorAll('.post-sticky-flag');
-      stickyFlags.forEach(function(flag) {
-        flag.style.display = 'none';
-      });
-    });
+    // 页面加载完成后执行
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', minimizeHomepage);
+    } else {
+      minimizeHomepage();
+    }
+
+    // 额外保险，在内容完全加载后再次执行
+    window.addEventListener('load', minimizeHomepage);
   }
 })();
 </script>
