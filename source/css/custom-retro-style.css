@@ -1,0 +1,148 @@
+/*
+ * 文艺复古风格自定义样式
+ * Retro Literary Style for Hexo NexT Theme
+ */
+
+/* 全局背景 - 纸质质感 */
+body {
+    background: #f4f1ea; /* 米色纸质背景 */
+    background-image:
+        linear-gradient(90deg, rgba(200,195,185,0.1) 1px, transparent 1px),
+        linear-gradient(rgba(200,195,185,0.1) 1px, transparent 1px);
+    background-size: 20px 20px; /* 细微的网格纹理 */
+    color: #3e3a35; /* 深棕色文字 */
+}
+
+/* 头部区域 - 复古色调 */
+.header-inner {
+    background: linear-gradient(135deg, #8b7355 0%, #a0826d 100%);
+    border-bottom: 2px solid #6b5a4a;
+}
+
+/* 网站标题 - 复古字体风格 */
+.site-title {
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #f5f5dc !important; /* 米白色 */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+}
+
+/* 导航菜单 - 经典风格 */
+.menu-item a {
+    color: #f5f5dc !important;
+    font-family: "Georgia", serif;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.menu-item a:hover {
+    color: #ffd700 !important; /* 金色高亮 */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* 文章卡片 - 纸质效果 */
+.post-block {
+    background: #fffaf0; /* 亚麻色背景 */
+    border: 1px solid #d4c4b0;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(139,115,85,0.15);
+    margin-bottom: 2em;
+    padding: 1.5em;
+}
+
+/* 文章标题 - 经典风格 */
+.post-title {
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #5a4a3a;
+    border-bottom: 1px solid #c4b49a;
+    padding-bottom: 0.3em;
+}
+
+/* 文章元信息 - 复古色彩 */
+.post-meta {
+    color: #8b7355;
+    font-family: "Georgia", serif;
+    font-style: italic;
+}
+
+/* 侧边栏 - 温暖色调 */
+.sidebar {
+    background: #f9f6f0;
+    border-left: 2px solid #c4b49a;
+}
+
+/* 侧边栏标题 */
+.sidebar-title {
+    color: #5a4a3a;
+    font-family: "Georgia", serif;
+    border-bottom: 1px solid #c4b49a;
+}
+
+/* 链接 - 复古风格 */
+a {
+    color: #8b4513; /* 马鞍棕色 */
+    text-decoration: none;
+    border-bottom: 1px dotted #8b4513;
+}
+
+a:hover {
+    color: #a0522d; /* 陶土色 */
+    border-bottom: 1px solid #a0522d;
+}
+
+/* 按钮样式 - 复古感 */
+.btn {
+    background: linear-gradient(135deg, #8b7355 0%, #a0826d 100%);
+    color: #f5f5dc;
+    border: 1px solid #6b5a4a;
+    font-family: "Georgia", serif;
+}
+
+/* 代码块 - 经典编程风格 */
+.highlight {
+    background: #2b2b2b;
+    border: 1px solid #4a4a4a;
+    border-radius: 3px;
+}
+
+/* 分页样式 */
+.pagination {
+    font-family: "Georgia", serif;
+}
+
+.page-number, .extend {
+    background: #fffaf0;
+    border: 1px solid #c4b49a;
+    color: #5a4a3a;
+}
+
+.page-number.current {
+    background: #8b7355;
+    color: #f5f5dc;
+}
+
+/* 页脚 - 复古风格 */
+.footer {
+    background: linear-gradient(135deg, #5a4a3a 0%, #3e3a35 100%);
+    color: #d4c4b0;
+    font-family: "Georgia", serif;
+}
+
+/* 添加阴影效果，增强纸质感 */
+.post-block:hover {
+    box-shadow: 0 4px 12px rgba(139,115,85,0.25);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    body {
+        background-size: 15px 15px;
+    }
+
+    .post-block {
+        padding: 1em;
+        margin-bottom: 1.5em;
+    }
+}
