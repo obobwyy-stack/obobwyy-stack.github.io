@@ -62,48 +62,61 @@
 
 <script>
 (function() {
-  // 首页文章只显示标题的动态CSS
+  // 首页只显示文章标题，无其他元素
   if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '') {
     window.addEventListener('DOMContentLoaded', function() {
+      // 隐藏文章正文
       var postBodies = document.querySelectorAll('.post-body');
       postBodies.forEach(function(postBody) {
         postBody.style.display = 'none';
-        postBody.style.visibility = 'hidden';
         postBody.style.height = '0';
         postBody.style.overflow = 'hidden';
         postBody.style.padding = '0';
         postBody.style.margin = '0';
       });
 
-      // 优化文章块样式，减小占用空间
-      var postBlocks = document.querySelectorAll('.post-block');
-      postBlocks.forEach(function(block) {
-        block.style.padding = '0.5em 0';
-        block.style.minHeight = 'auto';
-        block.style.marginBottom = '0.8em';
-      });
-
-      // 优化文章标题样式
-      var postTitles = document.querySelectorAll('.post-title');
-      postTitles.forEach(function(title) {
-        title.style.fontSize = '1.2em';
-        title.style.margin = '0.3em 0';
-        title.style.padding = '0';
-      });
-
-      // 优化文章元信息样式
+      // 完全隐藏文章元信息（日期、分类等）
       var postMetas = document.querySelectorAll('.post-meta');
       postMetas.forEach(function(meta) {
-        meta.style.fontSize = '0.85em';
-        meta.style.margin = '0.2em 0';
+        meta.style.display = 'none';
+        meta.style.height = '0';
+        meta.style.overflow = 'hidden';
         meta.style.padding = '0';
+        meta.style.margin = '0';
       });
 
-      // 优化文章头部样式
+      // 极简文章块样式 - 只显示标题
+      var postBlocks = document.querySelectorAll('.post-block');
+      postBlocks.forEach(function(block) {
+        block.style.padding = '0';
+        block.style.margin = '0';
+        block.style.marginBottom = '0.3em';
+        block.style.minHeight = 'auto';
+        block.style.background = 'transparent';
+        block.style.border = 'none';
+        block.style.boxShadow = 'none';
+      });
+
+      // 文章标题样式 - 简洁紧凑
+      var postTitles = document.querySelectorAll('.post-title');
+      postTitles.forEach(function(title) {
+        title.style.fontSize = '1.1em';
+        title.style.margin = '0';
+        title.style.padding = '0.3em 0';
+        title.style.borderBottom = 'none';
+      });
+
+      // 文章头部样式
       var postHeaders = document.querySelectorAll('.post-header');
       postHeaders.forEach(function(header) {
         header.style.margin = '0';
         header.style.padding = '0';
+      });
+
+      // 隐藏置顶标记（可选）
+      var stickyFlags = document.querySelectorAll('.post-sticky-flag');
+      stickyFlags.forEach(function(flag) {
+        flag.style.display = 'none';
       });
     });
   }
