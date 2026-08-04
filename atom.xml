@@ -11,7 +11,20 @@
   <rights>All rights reserved 2026, Cai Yi Zeng</rights>
   <subtitle>A personal blog</subtitle>
   <title>My Blog</title>
-  <updated>2026-08-02T11:19:06.512Z</updated>
+  <updated>2026-08-02T12:38:02.105Z</updated>
+  <entry>
+    <author>
+      <name>Cai Yi Zeng</name>
+    </author>
+    <id>http://localhost:4000/2026/08/02/hello-world/</id>
+    <link href="http://localhost:4000/2026/08/02/hello-world/"/>
+    <published>2026-08-02T12:38:02.105Z</published>
+    <summary>
+      <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a>]]>
+    </summary>
+    <title>Hello World</title>
+    <updated>2026-08-02T12:38:02.105Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Cai Yi Zeng</name>
@@ -20,7 +33,7 @@
     <link href="http://localhost:4000/2026/08/02/vibecoding%E6%B5%81%E7%A8%8B%E6%BC%94%E8%BF%9B/"/>
     <published>2026-08-02T11:19:06.000Z</published>
     <title>vibecoding流程演进</title>
-    <updated>2026-08-02T11:19:06.512Z</updated>
+    <updated>2026-08-02T12:38:02.106Z</updated>
   </entry>
   <entry>
     <author>
@@ -37,7 +50,7 @@
       <![CDATA[<h1 id="Vibecoding-流程演进：从传统到现代"><a href="#Vibecoding-流程演进：从传统到现代" class="headerlink" title="Vibecoding 流程演进：从传统到现代"></a>Vibecoding]]>
     </summary>
     <title>vibecoding 流程演进</title>
-    <updated>2026-08-02T11:18:16.655Z</updated>
+    <updated>2026-08-02T12:38:02.105Z</updated>
   </entry>
   <entry>
     <author>
@@ -52,7 +65,7 @@
       <![CDATA[<h1 id="欢迎访问我的博客！"><a href="#欢迎访问我的博客！" class="headerlink"]]>
     </summary>
     <title>欢迎访问我的博客</title>
-    <updated>2026-08-02T12:21:25.670Z</updated>
+    <updated>2026-08-02T12:38:02.105Z</updated>
   </entry>
   <entry>
     <author>
@@ -70,7 +83,7 @@
 <h2]]>
     </summary>
     <title>我的第一篇技术文章</title>
-    <updated>2026-08-02T03:09:32.303Z</updated>
+    <updated>2026-08-02T12:38:02.106Z</updated>
   </entry>
   <entry>
     <author>
@@ -90,19 +103,6 @@
       <![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Welcome to my first blog]]>
     </summary>
     <title>Complete Hexo Blog Setup Tutorial</title>
-    <updated>2026-08-01T12:05:32.697Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Cai Yi Zeng</name>
-    </author>
-    <id>http://localhost:4000/2026/08/01/hello-world/</id>
-    <link href="http://localhost:4000/2026/08/01/hello-world/"/>
-    <published>2026-08-01T11:37:07.920Z</published>
-    <summary>
-      <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a>]]>
-    </summary>
-    <title>Hello World</title>
-    <updated>2026-08-01T11:37:07.921Z</updated>
+    <updated>2026-08-02T12:38:02.105Z</updated>
   </entry>
 </feed>

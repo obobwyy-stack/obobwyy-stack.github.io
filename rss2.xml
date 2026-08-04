@@ -6,7 +6,7 @@
     <description>A personal blog</description>
     <language>en</language>
     <copyright>All rights reserved 2026, Cai Yi Zeng</copyright>
-    <lastBuildDate>Sun, 02 Aug 2026 11:19:06 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 12:38:02 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>http://localhost:4000/icon.png</url>
@@ -14,6 +14,15 @@
       <link>http://localhost:4000/</link>
     </image>
     <atom:link href="http://localhost:4000/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:4000/2026/08/02/hello-world/</link>
+      <description>
+        <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a>]]>
+      </description>
+      <author>Cai Yi Zeng</author>
+      <pubDate>Sun, 02 Aug 2026 12:38:02 GMT</pubDate>
+    </item>
     <item>
       <title>vibecoding流程演进</title>
       <link>http://localhost:4000/2026/08/02/vibecoding%E6%B5%81%E7%A8%8B%E6%BC%94%E8%BF%9B/</link>
@@ -73,15 +82,6 @@
       <category domain="http://localhost:4000/tags/GitHub-Pages/">GitHub Pages</category>
       <category domain="http://localhost:4000/tags/Web-Development/">Web Development</category>
       <pubDate>Sat, 01 Aug 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:4000/2026/08/01/hello-world/</link>
-      <description>
-        <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a>]]>
-      </description>
-      <author>Cai Yi Zeng</author>
-      <pubDate>Sat, 01 Aug 2026 11:37:07 GMT</pubDate>
     </item>
   </channel>
 </rss>
